@@ -166,3 +166,23 @@ git push -u origin main
 ```
 
 That's it – the project will be live on GitHub.
+
+---
+
+## GitHub Pages deployment
+
+This repository includes a GitHub Actions workflow at:
+
+- `.github/workflows/deploy-pages.yml`
+
+On pushes to `main`, it deploys the `docs/` folder to GitHub Pages.
+
+After merging to `main`, enable Pages in your repository settings:
+
+1. Go to **Settings → Pages**
+2. Under **Build and deployment**, choose **Source: GitHub Actions**
+3. Save
+
+Once the workflow completes, your site will be available at:
+
+`https://ericfinland.github.io/VPN-protocol/`

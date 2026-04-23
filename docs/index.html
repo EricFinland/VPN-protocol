@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vpn-protocol-rs (Python educational VPN)</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        background: #f8fafc;
+        color: #0f172a;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+      h1, h2 {
+        line-height: 1.25;
+      }
+      code {
+        background: #e2e8f0;
+        padding: 0.125rem 0.25rem;
+        border-radius: 4px;
+      }
+      pre {
+        background: #0f172a;
+        color: #e2e8f0;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      a {
+        color: #0f62fe;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>vpn-protocol-rs (Python educational VPN)</h1>
+      <p>
+        Minimal, self-contained implementation of an <strong>educational VPN-like protocol</strong> in pure Python.
+      </p>
+      <p>
+        Warning: The crypto in this project is <strong>homebrew and educational only</strong>. Do not use this for real security.
+      </p>
+
+      <h2>Repository</h2>
+      <p>
+        Source code and full project documentation:
+        <a href="https://github.com/EricFinland/VPN-protocol">EricFinland/VPN-protocol</a>
+      </p>
+
+      <h2>Run tests</h2>
+      <pre><code>python -m pytest</code></pre>
+
+      <h2>Quick start</h2>
+      <p>Run server:</p>
+      <pre><code>python main.py server --target-host 127.0.0.1 --target-port 8000 --passphrase "correct horse battery staple"</code></pre>
+      <p>Run client:</p>
+      <pre><code>python main.py client --passphrase "correct horse battery staple"</code></pre>
+    </main>
+  </body>
+</html>
